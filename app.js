@@ -23,7 +23,7 @@ app.get('/:dateVal',function(req,res,next){
    }
    else{
        var unixDate = dateVal;
-       var naturalDate = new Date(dateVal)*1000;
+       var naturalDate = new Date(dateVal);
        naturalDate = naturalDate.toLocaleDateString("en-us", dateformatttingOptions);
    }
 
