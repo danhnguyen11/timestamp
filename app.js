@@ -33,6 +33,6 @@ app.get('/dataValues/:dateVal',function(req,res,next){
 
 
 
-app.listen(port,function(){
+app.listen(5000,function(){
     console.log("It's working....");
 });
