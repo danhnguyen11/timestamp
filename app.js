@@ -7,7 +7,7 @@ var app = module.exports = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/dataValues/:dateVal',function(req,res,next){
+app.get('/:dateVal',function(req,res,next){
    var dateVal = req.params.dateVal;
   
    var dateformatttingOptions = {
