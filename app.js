@@ -33,6 +33,6 @@ app.get('/:dateVal',function(req,res,next){
 
 
 
-app.listen(port || 3030 ,function(){
-    console.log("It's working....");
+app.listen(process.env.PORT || 3030, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
